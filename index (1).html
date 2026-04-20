@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Eventmaker Atlas Overlay</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      max-width: 760px;
+      margin: 60px auto;
+      padding: 0 24px;
+      color: #1a1a1a;
+      line-height: 1.7;
+    }
+    h1 { font-size: 1.8rem; margin-bottom: 4px; }
+    h2 { font-size: 1.15rem; margin-top: 36px; margin-bottom: 8px; }
+    .meta { color: #666; font-size: 0.9rem; margin-bottom: 40px; }
+    .lang-divider {
+      border: none;
+      border-top: 2px solid #e5e5e5;
+      margin: 60px 0;
+    }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    a { color: #2563eb; }
+  </style>
+</head>
+<body>
+
+  <!-- ══════════════ ENGLISH ══════════════ -->
+
+  <h1>Privacy Policy</h1>
+  <p class="meta">Eventmaker Atlas Overlay · Last updated: April 20, 2026</p>
+
+  <h2>Overview</h2>
+  <p>
+    Eventmaker Atlas Overlay is a Chrome extension that provides a configuration
+    documentation overlay for the Eventmaker back-office. This policy explains
+    what data the extension accesses, how it is stored, and what it does not do.
+  </p>
+
+  <h2>Data accessed</h2>
+  <p>The extension accesses the following data:</p>
+  <ul>
+    <li>
+      <strong>Eventmaker configuration data</strong> — the extension makes read-only
+      GET requests to the Eventmaker API (the platform you are already logged into)
+      to retrieve configuration objects such as guest fields and segments. No
+      credentials are collected or stored by the extension; it relies solely on
+      the authentication session already active in your browser.
+    </li>
+    <li>
+      <strong>Current page URL</strong> — the extension reads the URL of the active
+      Eventmaker page to detect context (which event, which section) and display
+      relevant information.
+    </li>
+  </ul>
+
+  <h2>Data storage</h2>
+  <p>All data is stored <strong>locally on your device only</strong>:</p>
+  <ul>
+    <li>
+      <strong>IndexedDB</strong> — used to cache Eventmaker configuration data
+      fetched from the API, so the extension works without repeated network calls.
+    </li>
+    <li>
+      <strong>localStorage</strong> — used to store lightweight usage data such as
+      recently visited events and feature visit counts, to improve navigation within
+      the overlay.
+    </li>
+  </ul>
+  <p>
+    None of this data leaves your device. It is never transmitted to any external
+    server, third party, or analytics service.
+  </p>
+
+  <h2>Data we do not collect</h2>
+  <ul>
+    <li>We do not collect personal information.</li>
+    <li>We do not use analytics or tracking tools.</li>
+    <li>We do not share any data with third parties.</li>
+    <li>We do not send any data to servers other than the Eventmaker API you are already using.</li>
+  </ul>
+
+  <h2>Permissions used</h2>
+  <ul>
+    <li>
+      <strong>storage</strong> — to persist local cache (IndexedDB / localStorage) as described above.
+    </li>
+    <li>
+      <strong>host permissions for Eventmaker domains</strong> — to inject the overlay
+      into Eventmaker back-office pages and to make GET requests to the Eventmaker API
+      on your behalf.
+    </li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>
+    If you have any questions about this policy, please contact the extension maintainer
+    at your organization.
+  </p>
+
+  <hr class="lang-divider" />
+
+  <!-- ══════════════ FRANÇAIS ══════════════ -->
+
+  <h1>Politique de confidentialité</h1>
+  <p class="meta">Eventmaker Atlas Overlay · Dernière mise à jour : 20 avril 2026</p>
+
+  <h2>Présentation</h2>
+  <p>
+    Eventmaker Atlas Overlay est une extension Chrome qui affiche une surcouche de
+    documentation de configuration sur le back-office Eventmaker. Cette page explique
+    quelles données l'extension accède, comment elles sont stockées, et ce qu'elle ne
+    fait pas.
+  </p>
+
+  <h2>Données accédées</h2>
+  <p>L'extension accède aux données suivantes :</p>
+  <ul>
+    <li>
+      <strong>Données de configuration Eventmaker</strong> — l'extension effectue des
+      requêtes GET en lecture seule vers l'API Eventmaker (la plateforme à laquelle vous
+      êtes déjà connecté) pour récupérer des objets de configuration tels que les champs
+      invités et les segments. Aucune credential n'est collectée ni stockée par
+      l'extension ; elle s'appuie uniquement sur la session d'authentification déjà active
+      dans votre navigateur.
+    </li>
+    <li>
+      <strong>URL de la page courante</strong> — l'extension lit l'URL de la page
+      Eventmaker active pour détecter le contexte (quel événement, quelle section) et
+      afficher les informations pertinentes.
+    </li>
+  </ul>
+
+  <h2>Stockage des données</h2>
+  <p>Toutes les données sont stockées <strong>localement sur votre appareil uniquement</strong> :</p>
+  <ul>
+    <li>
+      <strong>IndexedDB</strong> — utilisé pour mettre en cache les données de configuration
+      Eventmaker récupérées depuis l'API.
+    </li>
+    <li>
+      <strong>localStorage</strong> — utilisé pour stocker des données légères telles que
+      les événements récemment visités et les compteurs de visite par feature.
+    </li>
+  </ul>
+  <p>
+    Ces données ne quittent jamais votre appareil. Elles ne sont jamais transmises à un
+    serveur externe, à un tiers, ni à un service d'analyse.
+  </p>
+
+  <h2>Données non collectées</h2>
+  <ul>
+    <li>Nous ne collectons pas d'informations personnelles.</li>
+    <li>Nous n'utilisons pas d'outils d'analyse ou de tracking.</li>
+    <li>Nous ne partageons aucune donnée avec des tiers.</li>
+    <li>Nous n'envoyons aucune donnée vers des serveurs autres que l'API Eventmaker que vous utilisez déjà.</li>
+  </ul>
+
+  <h2>Permissions utilisées</h2>
+  <ul>
+    <li>
+      <strong>storage</strong> — pour persister le cache local (IndexedDB / localStorage).
+    </li>
+    <li>
+      <strong>Permissions hôte sur les domaines Eventmaker</strong> — pour injecter la
+      surcouche dans les pages du back-office Eventmaker et effectuer des requêtes GET
+      vers l'API Eventmaker en votre nom.
+    </li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>
+    Pour toute question relative à cette politique, contactez le mainteneur de l'extension
+    au sein de votre organisation.
+  </p>
+
+</body>
+</html>
